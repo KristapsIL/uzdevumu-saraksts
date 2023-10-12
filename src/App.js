@@ -1,4 +1,4 @@
-
+import Uzdevums from "./Uzdevums";
 
 function App() {
   const uzdevumi = [{
@@ -37,11 +37,12 @@ function App() {
     "title": "qui ullam ratione quibusdam voluptatem quia omnis",
     "completed": false
   }]
-  const uzdevumiJSX = uzdevumi.map(()=>{
-    
+  const uzdevumiJSX = uzdevumi.map((box, indekss)=>{
+    return <Uzdevums />
   })
   return (
     <div className="App">
+      {uzdevumiJSX}
     </div>
   );
 }
